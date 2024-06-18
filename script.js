@@ -38,11 +38,11 @@ let output = document.querySelector(".display");
 // display numbers after the click event
 numbers.addEventListener("click", function(e){
     let target = e.target;
-    checkNumber(target);
+    displayCheckNumber(target);
 })
 
 // display numbers and check if it is the first or second number
-function checkNumber(num){
+function displayCheckNumber(num){
     if (values.isFirstNumber == true && values.firstNumber == 0){
         output.textContent += num.textContent;
         values.firstNumber = num.textContent;
